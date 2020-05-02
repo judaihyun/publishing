@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Nav bar</title>
+	<script src="https://kit.fontawesome.com/bf8da0c167.js" 
+	crossorigin="anonymous"></script>
+</head>
+<body>
+
+	<header>
+	<nav class="navbar">
+		<div class="navbar__logo">
+			<i class="fab fa-accusoft"></i>
+			<a href="">DreamCoding</a>
+			
+		</div>
+		<ul class="navbar__menu">
+			<li><a href="">Home</a></li>
+			<li><a href="">Gallery</a></li>
+			<li><a href="">Weddings</a></li>
+			<li><a href="">FAO</a></li>
+			<li><a href="">Bookings</a></li>
+
+		</ul>
+		<ul class="navbar__icons">
+			<li><i class="fab fa-twitter"></i></li>
+			<li><i class="fab fa-facebook-f"></i></li>
+		</ul>
+
+		<a href="#" class="navbar__toogleBtn">
+			<i class="fas fa-bars"></i>
+		</a>
+	</nav>
+	</header>
+	<section class="content">
+		<section class="video__player">
+			player
+		</section>
+		<section class="video__content_box">
+			<div class="video__meta_data">
+				<div class="meta__title">
+					클론코딩 유튜브 사이트 따라 만들기(HTML+CSS 연습편, 웹 포트폴리오) | 프론트엔드 개발자 입문편: HTML, CSS, Javascript
+				</div>
+				<div class="meta__info">
+					<div class="meta__indicator">
+						<article class="meta__count">조회수 3,272회</article>
+						<article class="meta__date">• 2020.3.14</article>
+					</div>
+					<div class="meta__icon">
+						<i class="fas fa-thumbs-up"> 140</i>
+						<i class="fas fa-thumbs-down"> 2</i>
+						<i class="fas fa-share-square"> 공유</i>
+						<i class="fas fa-save"> 저장</i>
+						<i class="fas fa-ellipsis-h"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<section class="channel__info_box">
+			<header class="channel__info_header">
+					<i class="far fa-user-circle"></i>
+
+					<section class="channel__meta_info">
+						<div class="channel__info_header_title">
+							<article class="channel__title_text">
+								드림코딩 by 엘리
+							</article>
+							<article class="channel__title_info">
+								구독자 2.96천명
+							</article>
+						</div>
+
+						<div class="channel__btn_box">
+							<div class="channel__subscribe_btn">구독중</div>
+							<div class="far fa-bell"></div>	
+						</div>
+					</section>
+
+			</header>
+			<section class="channel__info_content">
+				유튜브 사이트를 반응형으로 만들어 볼꺼예요. 순수 HTML, CSS를 이용해서 (Javascript 약간) 만들어 보고, 다음에 Javascript를 배우면 동적으로 서버에서 데이터를 가져오는 연습을 더 해보도록 할께요.
+			</section>
+		</section>
+
+		</section>
+
+
+
+		<section class="video__playlist">
+			playlist
+		</section>
+	</section>
+
+
+<script>
+	const t = document.getElementsByClassName("navbar__toogleBtn")[0];
+	const menu = document.getElementsByClassName('navbar__menu')[0];
+	t.addEventListener('click',()=>{
+		t.classList.toggle('active');
+		menu.classList.toggle('active');
+	})
+</script>
+</body>
+</html>
+
+
