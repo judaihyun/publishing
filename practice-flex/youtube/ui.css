@@ -1,0 +1,58 @@
+:root{
+	/* Color */
+	--white-color: #fff;
+	--black-color: #140a00;
+	--blue-color: #045fd4;
+	--red-color: #ff0000;
+	--gray-dark-color: #909090;
+	--gray-light-color: #e0e0e0;
+
+	/* Size */
+	--padding: 12px;
+	--avatar-size: 36px;
+
+	/* Font Size */
+	--font-large: 25px;
+	--font-medium: 14px;
+	--font-small: 12px;
+	--font-macro: 10px;
+}
+
+
+.menu{
+	display: flex;
+	padding: var(--padding);
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.menu .hamber{
+	font-size: var(--font-large);
+}
+.menu .logo{
+	flex-grow: 1;
+	padding-left: var(--padding);
+	font-size: var(--font-large);
+}
+.menu .logo i{
+	color: gold;
+}
+.menu .menu-icons{
+	padding-left: var(--padding);
+	padding-right: var(--padding);
+	font-size: var(--font-large);
+}
+
+
+.items{
+	display:flex;
+	flex-direction: row;
+}
+
+.profile-logo{
+	background-color:#86efef;
+	border-radius:100px;
+	text-align:center;
+	font-size: var(--font-large);
+	vertical-align:middle;
+}
