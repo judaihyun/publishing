@@ -9,7 +9,9 @@
 	<style>
 	.grid-container {
 		display:grid;
-		grid-template-columns: 200px 200px 500px;
+		/* grid-template-columns: 200px 200px 500px; */
+		/* grid-template-columns: 1fr 500px 1fr; */
+		grid-template-columns: repeat(auto-fit, minmax(200px, auto));
 	}
 	</style>
 </head>
