@@ -1,0 +1,70 @@
+
+body{
+	background-color:#3f52e3;
+	font-family: "Work Sans", Arial, sans-serif;
+}
+
+.banner{
+	display: flex;
+	justify-content: space-between;
+	border: solid 1px red;
+	background-color: #000 ;
+	padding:0.8rem 1rem;
+}
+
+.banner > .brand_name{
+	cursor: pointer;
+	color:white;
+	font-size: 20px;
+	font-weight: 900;
+}
+
+.banner > .toggler{
+	cursor: pointer;
+	color:rgba(255, 255, 255, 0.5);
+	font-size: 16px;
+	letter-spacing: .1em;
+}
+
+.collapse{
+	display: none;
+}
+
+@media (min-width: 576px) {
+	.brand_name{
+		white-space: nowrap;
+		padding-left:10%;
+	}
+	.toggler{
+		white-space: nowrap;
+		padding-right:10%;
+	}
+
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+	.banner{
+		background-color: transparent;
+		border: solid 1px blue;
+		justify-content: stretch;
+	}
+	.banner_collapse{
+		display:flex;
+		align-items: center;
+	}
+	.banner_nav_list{
+		display:flex;
+	}
+	.banner_nav_list>.nav_item{
+		margin-left:3rem;
+	}
+	.toggler{
+		display: none;
+	}
+}
+
+@media (min-width: 1200px) {
+}
