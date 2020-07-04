@@ -1,7 +1,11 @@
 
 body{
-	background-color:#3f52e3;
 	font-family: "Work Sans", Arial, sans-serif;
+  background: #fff;
+  font-size: 16px;
+  line-height: 1.8;
+	font-weight: 500;
+	color: #72789a;
 }
 
 .container{
@@ -19,7 +23,7 @@ body{
 	font-weight: 900;
 }
 
-.banner > .toggler{
+.banner .toggler{
 	cursor: pointer;
 	color:rgba(255, 255, 255, 0.5);
 	font-size: 16px;
@@ -30,19 +34,89 @@ body{
 	cursor: pointer;
 }
 
+.nav_item+.box{
+	white-space: nowrap;
+}
+
 .collapse{
 	display: none;
 }
+
+ /* content */
+.main_content{
+	background: #3f52e3;
+}
+
+.main_content_img{
+	width: 100vw;
+	height: 100vh;
+}
+
+.main_article{
+	top:0;
+	position: absolute;
+	padding-top:15vh;
+}
+
+.subheading {
+	color: #000;
+	font-weight: 600;
+	font-size: 16px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	display: inline-block;
+	color: rgba(255, 255, 255, 0.8); 
+}
+
+.mb-3{
+	font-size:40px;
+	margin-bottom: 1rem;
+	color: #fff;
+}
+.mb-3>span{
+	display: block;
+}
+.text{
+	display: flex;
+	text-align: center;
+	flex-direction: column;
+	line-height: 1.2;
+	font-weight: 700;
+}
+.text>p{
+	font-size:20px;
+	color: rgba(255, 255, 255, 0.8);
+	margin-bottom: 1rem;
+	line-height: 1.8;
+	font-weight: 500;
+}
+
+.btn.btn-secondary {
+	display: inline-block;
+	background: #21bf73;
+	border: 1px solid #21bf73;
+	color: #fff; 
+}
+.btn.btn-secondary:hover {
+	border: 1px solid #1da966;
+	background: #1da966;
+	color: #fff; 
+}
+
+.btn{
+	border-radius:5px;
+	cursor: pointer;
+	font-weight: 500;
+
+}
+
 
 @media (min-width: 576px) {
 
 	.brand_name{
 		white-space: nowrap;
 	}
-	.toggler{
-		white-space: nowrap;
-		padding-right:10%;
-	}
+	
 
 }
 
